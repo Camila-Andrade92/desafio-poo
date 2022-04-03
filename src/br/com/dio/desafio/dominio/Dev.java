@@ -47,16 +47,32 @@ public class Dev {
         this.nome = nome;
     }
 
-    public Set<Conteudo> getConteudosInscritos() {
-        return conteudosInscritos;
+    public Set<Conteudo> getConteudosInscritos(){
+        return this.conteudosInscritos;
+    }
+
+    public String conteudosInscritos() {
+        String listaConteudoString = "";
+        for( Conteudo conteudo : conteudosInscritos){
+            listaConteudoString = listaConteudoString + conteudo.toString() ;
+        }
+        return listaConteudoString;
     }
 
     public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
         this.conteudosInscritos = conteudosInscritos;
     }
 
-    public Set<Conteudo> getConteudosConcluidos() {
-        return conteudosConcluidos;
+    public String conteudosConcluidos() {
+        String listaConteudoString = "";
+        for( Conteudo conteudo : this.conteudosConcluidos){
+            listaConteudoString = listaConteudoString + conteudo.toString() ;
+        }
+        return listaConteudoString;
+    }
+
+    public Set<Conteudo> getConteudosConcluidos(){
+        return this.conteudosConcluidos;
     }
 
     public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {

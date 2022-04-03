@@ -30,7 +30,6 @@ public class Main {
         mentoria.setData(LocalDate.now());
 
 
-
         Bootcamp bootcamp = new Bootcamp();
            bootcamp.setNome("GFT Quality Assurance");
            bootcamp.setDescricao("Descrição Bootcamp GFT Quality Assurance");
@@ -56,15 +55,15 @@ public class Main {
         System.out.println("Aluno inscrito: "+devCamila.getNome());
         devCamila.inscreverBootcamp(bootcamp);
         System.out.println("Bootcamp inscrito: " +bootcamp.getNome());
-        System.out.println("Conteudos inscritos: \n" + devCamila.getConteudosInscritos()+" ");
+        System.out.println("Conteudos inscritos: \n" + devCamila.conteudosInscritos()+" ");
         devCamila.progredir();
         devCamila.progredir();
         devCamila.progredir();
         devCamila.progredir();
         System.out.println("**********-----**********");
-        System.out.println("Conteudos inscritos após progressão: \n" + devCamila.getConteudosInscritos());
+        System.out.println("Conteudos inscritos após progressão: \n" + devCamila.conteudosInscritos());
         System.out.println("**********-----**********");
-        System.out.println("Conteudos concluídos: \n" + devCamila.getConteudosConcluidos());
+        System.out.println("Conteudos concluídos: \n" + devCamila.conteudosConcluidos());
         System.out.println("Pontuação XP: "+devCamila.calcularTotalXp());
         System.out.println("**********-----**********");
         devCamila.aprovado(bootcamp);
@@ -83,13 +82,13 @@ public class Main {
         System.out.println("Aluno inscrito: "+devLucio.getNome());
         devLucio.inscreverBootcamp(bootcamp);
         System.out.println("Bootcamp inscrito: " +bootcamp.getNome());
-        System.out.println("Conteudos inscritos: \n" + devLucio.getConteudosInscritos()+" ");
+        System.out.println("Conteudos inscritos: \n" + devLucio.conteudosInscritos()+" ");
         devLucio.progredir();
         devLucio.progredir();
         System.out.println("**********-----**********");
-        System.out.println("Conteudos inscritos após progressão: \n" + devLucio.getConteudosInscritos());
+        System.out.println("Conteudos inscritos após progressão: \n" + devLucio.conteudosInscritos());
         System.out.println("**********-----**********");
-        System.out.println("Conteudos concluídos: \n" + devLucio.getConteudosConcluidos());
+        System.out.println("Conteudos concluídos: \n" + devLucio.conteudosConcluidos());
         System.out.println("Pontuação XP: "+devLucio.calcularTotalXp());
         System.out.println("**********-----**********");
         devLucio.aprovado(bootcamp);
@@ -105,14 +104,14 @@ public class Main {
         System.out.println("Aluno inscrito: "+devMaria.getNome());
         devMaria.inscreverBootcamp(bootcamp);
         System.out.println("Bootcamp inscrito: " +bootcamp.getNome());
-        System.out.println("Conteudos inscritos: \n" + devMaria.getConteudosInscritos()+" ");
+        System.out.println("Conteudos inscritos: \n" + devMaria.conteudosInscritos()+" ");
         devMaria.progredir();
         devMaria.progredir();
         devMaria.progredir();
         System.out.println("**********-----**********");
-        System.out.println("Conteudos inscritos após progressão: \n" + devMaria.getConteudosInscritos());
+        System.out.println("Conteudos inscritos após progressão: \n" + devMaria.conteudosInscritos());
         System.out.println("**********-----**********");
-        System.out.println("Conteudos concluídos: \n" + devMaria.getConteudosConcluidos());
+        System.out.println("Conteudos concluídos: \n" + devMaria.conteudosConcluidos());
         System.out.println("Pontuação XP: "+devMaria.calcularTotalXp());
         System.out.println("**********-----**********");
         devMaria.aprovado(bootcamp);
@@ -128,13 +127,13 @@ public class Main {
         System.out.println("Aluno inscrito: "+devMiguel.getNome());
         devMiguel.inscreverBootcamp(bootcamp);
         System.out.println("Bootcamp inscrito: " +bootcamp.getNome());
-        System.out.println("Conteudos inscritos: \n" + devMiguel.getConteudosInscritos()+" ");
+        System.out.println("Conteudos inscritos: \n" + devMiguel.conteudosInscritos()+" ");
         devMiguel.progredir();
         devMiguel.progredir();
         System.out.println("**********-----**********");
-        System.out.println("Conteudos inscritos após progressão: \n" + devMiguel.getConteudosInscritos());
+        System.out.println("Conteudos inscritos após progressão: \n" + devMiguel.conteudosInscritos());
         System.out.println("**********-----**********");
-        System.out.println("Conteudos concluídos: \n" + devMiguel.getConteudosConcluidos());
+        System.out.println("Conteudos concluídos: \n" + devMiguel.conteudosConcluidos());
         System.out.println("Pontuação XP: "+devMiguel.calcularTotalXp());
         System.out.println("**********-----**********");
         devMiguel.aprovado(bootcamp);
